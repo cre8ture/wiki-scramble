@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ASCII Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+  </head>
+  
+  <body>
+    <div id=explain>
+      <h3> wiki scramble </h3>
+      <code> An experiment in ASCII</code>
+      <code> Input a topic. </code>
+      <code> Move the mouse. </code>
+      <label for="topic">Search Wikipedia Topic to scramble:</label>
+      <input id='topic' placeholder='artificial intelligence' />
+      <label for="your-text">Or scramble your own text</label>
+      <textarea id="your-text" placeholder="Your text here"></textarea>
+      <button id="captureBtn">Take Snapshot</button>
+  
+  
+    </div>
+    <div id='wikiArticle'> </div>
+  
+    <div id="asciiContainer"></div>
+  </body>
+  <script src="app.js"></script>
+
+  </html>

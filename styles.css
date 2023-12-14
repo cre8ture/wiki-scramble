@@ -1,0 +1,66 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+#asciiContainer {
+  white-space: nowrap;
+  font-family: "monospace";
+  font-size:20px;
+
+}
+span {
+  font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  width: 1ch;
+  height: 1ch;
+  transition: transform 1s ease-out;
+  font-size:20px;
+}
+#explain {
+  z-index: 999;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr;
+  max-width: 200px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: red;
+  border-radius: 15%;
+  opacity: 0.9;
+   /* Add a box-shadow for a neon glow effect */
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); 
+}
+
+textarea{
+  opacity: 1
+}
+
+#captureBtn{
+  margin-bottom: 10px;
+}
+
+#input{
+  background-color: white;
+  opacity: 1;
+}
+
+#wikiArticle {
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: pre-wrap; /* Changes text to wrap to next line */
+  word-wrap: break-word; /* Allows long words to be able to be broken and wrap onto the next line */
+  overflow: auto; 
+  font-family: "monospace";
+}
